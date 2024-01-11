@@ -33,4 +33,10 @@ int read_history(ino_t *info);
 int dev_history_list(ino_t *info, char *buf, int linecount);
 int rearrange_history(ino_t *info);
 
+/* getenv.c */
+char *_display_env(info_t *, const char *);
+int _retrieve_env(info_t *);
+int _my_env(info_t *);
+int _remove_env(info_t *);
+int populate_env_list(info_t *);
 #endif
